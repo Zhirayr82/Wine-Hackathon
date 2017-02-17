@@ -12,46 +12,57 @@
 
 </head>
 <body>
-<div ng-app="myApp" ng-controller="myCtrl">
-	<div class="container">
-		<header>
-			<div class="row">
-				<div class="col-xs-12">
-					hedaer
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<div class="container">
+	<!-- 		<header>
+				<div class="row">
+					<div class="col-xs-12">
+						hedaer
+					</div>
 				</div>
-			</div>
-		</header>
+			</header> -->
 
-		<div id="content">
-			<div class="row">
-				<div class="col-xs-12" id="slider">
-						slider
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-8" id="mapid">
-
-
+			<div id="content">
+				<div class="row">
+					<div class="col-xs-12" id="slider">
+							slider
+					</div>
 				</div>
 
-				<div class="col-xs-4" id="side">
-						side
+				<div class="row">
+					<div class="col-xs-8" id="mapid"></div>
+
+					<div class="col-xs-4" id="side">
+						<ul id="owners">
+							<li class="owner" ng-repeat="x in owners">
+	    						<a href="#"><span id="own-name">{{ x.firstname }} {{ x.lastname }}</span> <br> {{ x.email }} </a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-xs-12" id="article">
-					articles
+				<div class="row">
+
+						<ul id="articles">
+							<li class="wines" ng-repeat="x in wines">
+
+								<div class="col-xs-3" id="photo">
+		    						<img class="img" src="http://wine.wildcodeschool.fr{{x.picture}}" alt="win" >
+		    					</div>
+
+	    						<div class="col-xs-9" id="desc">
+	    							<h3><p><h1 class="titre-desc"> {{ x.name.toUpperCase()}} </h1><br> {{ x.description }} </p></h3>
+	    							<p>{{ x.owner }}</p>
+	    						</div>
+							</li>
+						</ul>
+
 				</div>
-			</div>
-		</div>
-</div>
+			</div>{{ x.owner }}
+	</div>
 
+	</body>
 
-
-
-</body>
 
 
 
