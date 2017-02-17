@@ -1,3 +1,6 @@
+
+h1{color:white; text-align: center; margin-left: 340px;}
+
 body{
 	background-color: #E2D2D2;
 }
@@ -67,7 +70,9 @@ ul{
 	text-align: center;
 }
 
-.navbar-brand{height:50px;padding: 20px;}
+.navbar-default{height:100px; width:100%;padding: 20px; color:white;background-color: #757575; text-align: center;}
+
+.navbar-brand{color:white;text-align: center;}
 
 .apero {height:400px;width:780px;}
 
@@ -75,4 +80,25 @@ ul{
 
 .tumble {height:10%;}
 
+/**** Footer ****/
+.Footer {
+  /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+  padding: 0 1rem;
 
+  /* Typography */
+  font-family: 'Montserrat';
+
+  /* Visual */
+  background-color: #757575;
+  color: white;
+}
