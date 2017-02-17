@@ -57,37 +57,22 @@
 					</div>
 				</div>
 
-				<div class="row">
+				
 
-						<ul id="articles">
-							<li class="wines" ng-repeat="x in wines">
-							<div class="row">
-								<div class="col-sm-6 col-md-4">
-									<div class="thumbnail">
-									<img class="tumble"src="http://wine.wildcodeschool.fr{{x.picture}}" alt="...">
-										<div class="caption">
-											<h3><h1 class="titre-desc"> {{ x.name.toUpperCase()}} </h1></h3>
-											<p>{{ x.description }}</p>
-											<p>{{ x.owner }}</p>
-											<p><a href="#" class="btn btn-primary" role="button">Acheter</a> <a href="#" class="btn btn-default" role="button">En savoir plus</a></p>
-										</div>
-									</div>
+					<div class="row wines">
+						<div class="col-sm-6 col-md-4" ng-repeat="x in wines">
+							<div class="thumbnail thumbnailSize">
+								<img class="tumble" src="http://wine.wildcodeschool.fr{{x.picture}}" alt="...">
+								<div class="caption">
+									<h3><h1 class="titre-desc"> {{ x.name.toUpperCase()}} </h1></h3>
+									<p>{{ x.description | limitTo: 150 }}{{x.description.length > 150 ? '...' : ''}}</p>
+									<p><!--{{ x.owner }}--></p>
+									<p><a href="#" class="btn btn-primary" role="button">Acheter</a> <a href="#" class="btn btn-default" role="button">En savoir plus</a></p>
 								</div>
 							</div>
-
-								<!-- <div class="col-xs-3" id="photo">
-		    						<img class="img" src="http://wine.wildcodeschool.fr{{x.picture}}" alt="win" >
-		    					</div>
-
-	    						<div class="col-xs-9" id="desc">
-	    							<h3><p><h1 class="titre-desc"> {{ x.name.toUpperCase()}} </h1><br> {{ x.description }} </p></h3>
-	    							<p>{{ x.owner }}</p>
-	    						</div> -->
-							</li>
-						</ul>
-
-				</div>
-			</div>{{ x.owner }}
+						</div>
+					</div>
+			</div>
 	</div>
 <footer class="Footer">
 	<p>

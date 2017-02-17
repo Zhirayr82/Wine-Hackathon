@@ -1,5 +1,5 @@
 
-h1{color:white; text-align: center; margin-left: 340px;}
+.titre{color:white; text-align: center; margin-left: 340px;}
 
 body{
 	background-color: #E2D2D2;
@@ -70,7 +70,7 @@ ul{
 	text-align: center;
 }
 
-.navbar-default{height:100px; width:100%;padding: 20px; color:white;background-color: #757575; text-align: center;}
+.navbar-default{height:100px; width:100%!important; padding: 20px; color:white;background-color: #757575; text-align: center;}
 
 .navbar-brand{color:white;text-align: center;}
 
@@ -78,7 +78,8 @@ ul{
 
 .bouchon {width:380px;height:400px;}
 
-.tumble {height:10%;}
+.tumble {height:200px !important;
+                width: auto !important;}
 
 /**** Footer ****/
 .Footer {
@@ -102,3 +103,5 @@ ul{
   background-color: #757575;
   color: white;
 }
+
+.thumbnailSize {height: 430px;}
