@@ -74,9 +74,9 @@ ul{
 
 .navbar-brand{color:white;text-align: center;}
 
-.apero {height:400px;width:780px;}
+.apero {height:382px;width:780px;}
 
-.bouchon {width:380px;height:400px;}
+.bouchon {width:380px;height:382px;}
 
 .tumble {height:200px !important;
                 width: auto !important;}
@@ -106,4 +106,7 @@ ul{
 
 .thumbnailSize {height: 430px;}
 
-.container {margin-bottom: 20px;}
+.container {margin-top: 20px;}
+
+.sec1 {margin-bottom:15px;}
+.sec2 {margin-bottom:18px;}
