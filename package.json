@@ -1,0 +1,22 @@
+{
+  "name": "wine-hackathon",
+  "version": "1.0.0",
+  "description": "projet map et wine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhirayr82/Wine-Hackathon.git"
+  },
+  "author": "Viateur Benedicte Jiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhirayr82/Wine-Hackathon/issues"
+  },
+  "homepage": "https://github.com/Zhirayr82/Wine-Hackathon#readme",
+  "dependencies": {
+    "angular": "^1.6.2"
+  }
+}
