@@ -7,12 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script src="../js/components/map/monMapController.js"></script>
+	<script type="text/javascript" src="plan.js"></script>
 
 </head>
 <body>
-<div ng-app="myApp" ng-controller="myCtrl">
+
 	<div class="container">
 		<header>
 			<div class="row">
@@ -26,18 +25,18 @@
 			<div class="row">
 				<div class="col-xs-12" id="slider">
 						slider
-				</div>
+				</div>	
 			</div>
 
 			<div class="row">
-				<div class="col-xs-8" id="mapid">
+				<div ng-model="plan" class="col-xs-8" id="mapid">
 
-
+						
 				</div>
 
 				<div class="col-xs-4" id="side">
 						side
-				</div>
+				</div>	
 			</div>
 
 			<div class="row">
@@ -46,14 +45,10 @@
 				</div>
 			</div>
 		</div>
-</div>
-
-
-
 
 </body>
 
-
+ 
 
 <script type="text/javascript" src="plan.js"></script>
 </html>
