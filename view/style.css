@@ -40,7 +40,7 @@ header{
 	height: 70px;
 	font-size: 19px;
 	padding:15px;
-	padding-top: 10px;
+	padding:10px;
 }
 #own-name{
 	color: black;
@@ -70,4 +70,9 @@ ul{
 .navbar-brand{height:50px;padding: 20px;}
 
 .apero {height:400px;width:780px;}
+
 .bouchon {width:380px;height:400px;}
+
+.tumble {height:10%;}
+
+
