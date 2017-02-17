@@ -11,6 +11,8 @@ header{
 #slider{
 	height: 400px;
 	border: 1px solid black;
+	display:inline-block;
+	padding:0px;
 }
 /*----------------------------------------------------------------------------------------------
 ------------------------------------------------ plan ------------------------------------------
@@ -37,6 +39,8 @@ header{
 .owner{
 	height: 70px;
 	font-size: 19px;
+	padding:15px;
+	padding-top: 10px;
 }
 #own-name{
 	color: black;
@@ -62,3 +66,8 @@ ul{
 .titre-desc{
 	text-align: center;
 }
+
+.navbar-brand{height:50px;padding: 20px;}
+
+.apero {height:400px;width:780px;}
+.bouchon {width:380px;height:400px;}
